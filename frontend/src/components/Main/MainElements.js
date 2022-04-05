@@ -59,6 +59,7 @@ export const Row = styled.div`
   border-radius: 10px;
   justify-content: flex-start;
   align-items: center;
+  width: 65%;
 `;
 
 export const Card = styled.div`
