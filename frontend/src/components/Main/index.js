@@ -49,6 +49,10 @@ const Main = () => {
     "ninth3",
     "tenth3",
     "eleventh3",
+    "teamscore",
+    "teamwickets",
+    "teamscore2",
+    "teamwickets2",
   ];
 
   useEffect(() => {
@@ -66,11 +70,18 @@ const Main = () => {
               <TopContainer>
                 <Details l="flex-start">
                   <Team>TEAM1</Team>
-                  <Score>131/5</Score>
+                  <Score>
+                    {total[i][arr[33]]}/{total[i][arr[34]]}
+                  </Score>
+                </Details>
+                <Details>
+                  <Team>{i + 1}</Team>
                 </Details>
                 <Details l="flex-end">
                   <Team>TEAM2</Team>
-                  <Score>133/4</Score>
+                  <Score>
+                    {total[i][arr[35]]}/{total[i][arr[36]]}
+                  </Score>
                 </Details>
               </TopContainer>
               <BottomContainer>

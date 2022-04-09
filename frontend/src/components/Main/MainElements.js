@@ -10,6 +10,7 @@ export const Div = styled.div`
 export const Container = styled.div`
   display: flex;
   width: 90vw;
+  min-width: 900px;
   background-color: rgba(255, 67, 14, 0.12);
   background-color: #109e38;
   background-color: #111;
@@ -52,14 +53,15 @@ export const BottomContainer = styled.div`
 export const Row = styled.div`
   display: flex;
   height: 60px;
-  padding-left: 20px;
+  padding: 0px 20px;
   background-color: rgba(162, 162, 162, 0.08);
   background-color: white;
   margin: 30px;
   border-radius: 10px;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   width: 65%;
+  min-width: 800px;
 `;
 
 export const Card = styled.div`
@@ -70,9 +72,9 @@ export const Card = styled.div`
   background-color: #000;
 //   background-color: #000;
   text-align-center;
-  width: 40px;
+  min-width: 40px;
+  max-width:40px;
   border-radius: 5px;
-  margin: 0px 20px;
   color: #e10000;
   color: #109e38;
   color: #fff;

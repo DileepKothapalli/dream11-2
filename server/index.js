@@ -49,6 +49,10 @@ app.post("/insert", async (req, res) => {
   const ninth3 = req.body.ninth3;
   const tenth3 = req.body.tenth3;
   const eleventh3 = req.body.eleventh3;
+  const teamscore = req.body.teamscore;
+  const teamwickets = req.body.teamwickets;
+  const teamscore2 = req.body.teamscore2;
+  const teamwickets2 = req.body.teamwickets2;
   const email = new Game({
     first: first,
     second: second,
@@ -83,6 +87,10 @@ app.post("/insert", async (req, res) => {
     ninth3: ninth3,
     tenth3: tenth3,
     eleventh3: eleventh3,
+    teamscore: teamscore,
+    teamwickets: teamwickets,
+    teamscore2: teamscore2,
+    teamwickets2: teamwickets2,
   });
   try {
     await email.save();
