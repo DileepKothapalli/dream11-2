@@ -434,6 +434,120 @@ const Post = () => {
                 />
               </InputDiv>{" "}
             </PostContainer>{" "}
+            
+            <PostContainer>
+              <InputDiv>
+                <Label>First</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setFirst3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+              <InputDiv>
+                <Label>Second</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setSecond3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+              <InputDiv>
+                <Label>Third</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setThird3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+              <InputDiv>
+                <Label>Fourth</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setFourth3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+              <InputDiv>
+                <Label>Fifth</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setFifth3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+              <InputDiv>
+                <Label>Sixth</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setSixth3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+              <InputDiv>
+                <Label>Seventh</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setSeventh3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+              <InputDiv>
+                <Label>Eighth</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setEighth3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+              <InputDiv>
+                <Label>Ninth</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setNinth3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+              <InputDiv>
+                <Label>Tenth</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setTenth3(event.target.value);
+                  }}
+                />
+              </InputDiv>
+              <InputDiv>
+                <Label>Eleventh</Label>
+                <Input
+                  type="text"
+                  required
+                  onChange={(event) => {
+                    setEleventh3(event.target.value);
+                  }}
+                />
+              </InputDiv>{" "}
+            </PostContainer>{" "}
+            
             <PostContainer>
               <InputDiv>
                 <Label>Team1 Score</Label>
