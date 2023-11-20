@@ -1,14 +1,20 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const Game = require("./db/model");
 const mongoose = require("mongoose");
 
+
+
 const db = require("./db");
 
 const app = express();
 
-const PORT = 8080;
+const port = process.env.PORT || 3300;
+
+// Rest of your server setup code using the 'port' variable
+
 
 app.use(bodyParser.urlencoded(true));
 app.use(cors());
@@ -112,4 +118,4 @@ app.get("/read", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("Hello world");
 });
-app.listen(PORT, () => console.log(`Server Running on port ${PORT}`));
+app.listen(port, () => console.log(`Server Running on port ${port}`));
