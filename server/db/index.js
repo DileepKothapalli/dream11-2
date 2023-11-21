@@ -1,21 +1,19 @@
-const mongoose = require("mongoose");
+const { MongoClient } = require("mongodb");
 
-mongoose
-  .connect(
-    process.env.MONGO_URL,
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
-  .catch((e) => {
-    console.error("Connection error", e.message);
+const uri = process.env.MONGO_URL;
+const client = new MongoClient(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+client.connect()
+  .then(() => {
+    console.log("Connected to MongoDB");
+  })
+  .catch((err) => {
+    console.error("Connection error", err);
   });
 
-const db = mongoose.connection;
+const db = client.db(); // Access the database
 
 module.exports = db;
-
-
-// mongodb+srv://dileep:Pass123@cluster0.hvyj5.mongodb.net/?retryWrites=true&w=majority
-// mongodb+srv://dileep:Pass123@cluster0.tncxi.mongodb.net/dream11?retryWrites=true&w=majority
