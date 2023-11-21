@@ -108,7 +108,7 @@ app.post("/insert", async (req, res) => {
 
 app.get("/read", async (req, res) => {
   try {
-    const total = await db.collection("games").find().toArray();
+    const total = await db.collection("games").find({}).toArray();
     res.send(total);
   } catch (err) {
     console.log(err);
